@@ -8,9 +8,9 @@ import millify from "millify";
 
 import defaultImage from '../assets/images/house.jpeg'
 
-const Property = ({property: {coverPhoto, price, rentFrequency, rooms, agency, title, baths, area, isVerified, externalId }}) => {
+const Property = ({property: {coverPhoto, price, rentFrequency, rooms, agency, title, baths, area, isVerified, externalID }}) => {
     return (
-        <Link href={`/property/${externalId}`} passHref>
+        <Link href={`/property/${externalID}`} passHref>
             <Flex flexWrap={'wrap'} w={'420px'} p={'5'} paddingTop={'0'} justifyContent={'flex-start'} cursor={'pointer'}>
                <Box>
                    <Image src={coverPhoto ? coverPhoto.url : defaultImage} width={440} height={260} alt={'house'}/>
